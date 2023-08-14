@@ -2,6 +2,7 @@ html {
   background-color: black;
   color: seashell;
   font-size: 22px;
+  font-family: "Helvetica", sans-serif;
 }
 
 header {
@@ -16,7 +17,7 @@ header {
 }
 
 .navBar {
-  flex-basis: 25%;
+  flex-basis: 35%;
   display: inline-flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
@@ -148,4 +149,29 @@ footer {
   margin-left: 20px;
   width: 100%;
   text-align: left;
+}
+
+@media all and (max-width: 982px) {
+  .locations {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    text-align: center;
+    height: 500px;
+    flex-basis: 100%;
+    background-image: url(images/img-locations-background.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    overflow: scroll;
+  }
+  .navBar {
+    flex-basis: 50%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  .ourMission {
+    text-wrap: nowrap;
+  }
 }
