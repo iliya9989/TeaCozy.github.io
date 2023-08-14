@@ -12,7 +12,7 @@ header {
   height: 69px;
   align-items: center;
   background-color: black;
-    margin-top: -8px;
+  margin-top: -8px;
 }
 
 .navBar {
@@ -41,7 +41,7 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .ourMission {
@@ -77,8 +77,49 @@ h4 {
 
 .teaOfTheMonth {
   display: flex;
+  flex-basis: 1000px;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  flex-shrink: 1;
+}
+
+.teaOfTheMonth div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 .monthPhotos {
-    display: inline-flex;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: baseline;
+  justify-content: space-around;
+}
+
+.monthPhotos div {
+  display: flex;
+  justify-content: center;
+  max-width: 320px;
+  text-align: center;
+}
+
+.monthPhotos div img {
+  height: 200px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.locations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.locations h2 {
+  width: 100%;
+  text-align: center;
 }
